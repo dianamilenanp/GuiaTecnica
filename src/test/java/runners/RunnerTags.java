@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features="src/test/resources/features/academyChoucair.feature",
                             tags="@stories",
-                            glue="co.com.choucair.certification.proyectobase.stepdefinitions",
+                            glue="co.com.choucair.certification.proyectoutest.stepdefinitions",
                             snippets=SnippetType.CAMELCASE)
 
 

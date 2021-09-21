@@ -1,3 +1,4 @@
+apply plugin: 'cucumber'
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
@@ -32,6 +33,8 @@ dependencies {
     implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    testImplementation 'io.cucumber:cucumber-java8:6.10.4'
+    testImplementation 'io.cucumber:cucumber-junit:6.10.4'
 
 }
 gradle.startParameter.continueOnFailure = true
